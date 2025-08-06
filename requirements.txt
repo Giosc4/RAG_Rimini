@@ -1,0 +1,29 @@
+# Dipendenze per il sistema di indicizzazione
+
+
+setuptools
+wheel
+
+
+# PDF processing
+pypdf
+
+# Text encoding detection
+chardet
+
+# Embeddings e tokenizzazione
+sentence-transformers
+transformers
+torch
+
+# Utilities
+numpy
+
+# Optional - per processing avanzato
+beautifulsoup4  # per HTML parsing
+python-docx      # per file Word
+markdown         # per file Markdown
+
+# Per il vector database (prossimo step)
+chromadb
+langchain

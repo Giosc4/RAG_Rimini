@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-08-06T12:52:56.075259",
+  "embedding_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "documents_dir": "documents",
+  "statistics": {
+    "total_documents": 1,
+    "total_chunks": 193,
+    "total_characters": 111683,
+    "total_tokens_estimated": 38340,
+    "avg_chunks_per_doc": 193.0,
+    "chunk_statistics": {
+      "avg_tokens": 198.65284974093265,
+      "std_tokens": 136.49258821253517,
+      "min_tokens": 0,
+      "max_tokens": 479,
+      "median_tokens": 252.0,
+      "avg_chars": 578.6683937823834,
+      "chunks_over_512": 0,
+      "chunks_under_100": 65
+    },
+    "document_types": {
+      "pdf": 1
+    },
+    "priority_distribution": {
+      "high": 1
+    }
+  },
+  "chunker_config": {
+    "target_chunk_size": 350,
+    "max_chunk_size": 450,
+    "min_chunk_size": 100,
+    "overlap_tokens": 50
+  }
+}
