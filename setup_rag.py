@@ -136,7 +136,7 @@ def run_indexing():
         from indexing_pipeline import IndexingPipeline
         
         pipeline = IndexingPipeline(
-            documents_dir="./documents",
+            documents_dir="./PreProcessing_scripts/processed",
             output_dir="./indexed_data",
             embedding_model="sentence-transformers/paraphrase-mpnet-base-v2"
         )

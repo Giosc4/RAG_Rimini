@@ -7,6 +7,8 @@ wheel
 
 # PDF processing
 pypdf
+PyMuPDF
+pandas
 
 # Text encoding detection
 chardet
@@ -27,3 +29,7 @@ markdown         # per file Markdown
 # Per il vector database (prossimo step)
 chromadb
 langchain
+
+Pillow
+pytesseract
+tabulate

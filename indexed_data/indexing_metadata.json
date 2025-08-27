@@ -1,34 +1,50 @@
 {
-  "timestamp": "2025-08-06T12:52:56.075259",
+  "timestamp": "2025-08-27T17:33:01.645061",
   "embedding_model": "sentence-transformers/paraphrase-mpnet-base-v2",
   "documents_dir": "documents",
   "statistics": {
     "total_documents": 1,
-    "total_chunks": 193,
-    "total_characters": 111683,
-    "total_tokens_estimated": 38340,
-    "avg_chunks_per_doc": 193.0,
+    "total_chunks": 131,
+    "total_characters": 115811,
+    "total_tokens_estimated": 39604,
+    "avg_chunks_per_doc": 131.0,
     "chunk_statistics": {
-      "avg_tokens": 198.65284974093265,
-      "std_tokens": 136.49258821253517,
-      "min_tokens": 0,
+      "avg_tokens": 302.3206106870229,
+      "std_tokens": 51.78556301742447,
+      "min_tokens": 23,
       "max_tokens": 479,
-      "median_tokens": 252.0,
-      "avg_chars": 578.6683937823834,
+      "median_tokens": 309.0,
+      "avg_chars": 884.0534351145038,
       "chunks_over_512": 0,
-      "chunks_under_100": 65
+      "chunks_under_100": 1
     },
     "document_types": {
       "pdf": 1
     },
     "priority_distribution": {
       "high": 1
+    },
+    "multimodal_statistics": {
+      "total_images": 77,
+      "total_tables": 2,
+      "total_elements": 79,
+      "chunks_with_multimodal": 0,
+      "table_chunks": 0,
+      "docs_with_images": 1,
+      "docs_with_tables": 1
     }
   },
   "chunker_config": {
     "target_chunk_size": 350,
     "max_chunk_size": 450,
     "min_chunk_size": 100,
-    "overlap_tokens": 50
+    "overlap_tokens": 50,
+    "preserve_multimodal": true
+  },
+  "multimodal_config": {
+    "extract_images": true,
+    "extract_tables": true,
+    "save_images": true,
+    "images_dir": "extracted_images"
   }
 }

@@ -1,0 +1,564 @@
+{
+  "creation_date": "2025-08-27T17:32:47.893512",
+  "images": [
+    {
+      "id": "p1_img1",
+      "path": "extracted_images\\Rimini_p1_img1.png",
+      "width": 120,
+      "height": 161,
+      "source_doc": ""
+    },
+    {
+      "id": "p1_img2",
+      "path": "extracted_images\\Rimini_p1_img2.png",
+      "width": 250,
+      "height": 167,
+      "source_doc": ""
+    },
+    {
+      "id": "p1_img3",
+      "path": "extracted_images\\Rimini_p1_img3.png",
+      "width": 330,
+      "height": 247,
+      "source_doc": ""
+    },
+    {
+      "id": "p1_img4",
+      "path": "extracted_images\\Rimini_p1_img4.png",
+      "width": 20,
+      "height": 14,
+      "source_doc": ""
+    },
+    {
+      "id": "p1_img5",
+      "path": "extracted_images\\Rimini_p1_img5.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p1_img6",
+      "path": "extracted_images\\Rimini_p1_img6.png",
+      "width": 20,
+      "height": 31,
+      "source_doc": ""
+    },
+    {
+      "id": "p1_img7",
+      "path": "extracted_images\\Rimini_p1_img7.png",
+      "width": 100,
+      "height": 100,
+      "source_doc": ""
+    },
+    {
+      "id": "p1_img8",
+      "path": "extracted_images\\Rimini_p1_img8.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p3_img1",
+      "path": "extracted_images\\Rimini_p3_img1.png",
+      "width": 330,
+      "height": 301,
+      "source_doc": ""
+    },
+    {
+      "id": "p3_img2",
+      "path": "extracted_images\\Rimini_p3_img2.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p3_img3",
+      "path": "extracted_images\\Rimini_p3_img3.png",
+      "width": 330,
+      "height": 415,
+      "source_doc": ""
+    },
+    {
+      "id": "p3_img4",
+      "path": "extracted_images\\Rimini_p3_img4.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p4_img1",
+      "path": "extracted_images\\Rimini_p4_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p4_img2",
+      "path": "extracted_images\\Rimini_p4_img2.png",
+      "width": 250,
+      "height": 126,
+      "source_doc": ""
+    },
+    {
+      "id": "p5_img1",
+      "path": "extracted_images\\Rimini_p5_img1.png",
+      "width": 250,
+      "height": 188,
+      "source_doc": ""
+    },
+    {
+      "id": "p6_img1",
+      "path": "extracted_images\\Rimini_p6_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p6_img2",
+      "path": "extracted_images\\Rimini_p6_img2.png",
+      "width": 250,
+      "height": 327,
+      "source_doc": ""
+    },
+    {
+      "id": "p7_img1",
+      "path": "extracted_images\\Rimini_p7_img1.png",
+      "width": 250,
+      "height": 202,
+      "source_doc": ""
+    },
+    {
+      "id": "p8_img1",
+      "path": "extracted_images\\Rimini_p8_img1.png",
+      "width": 250,
+      "height": 144,
+      "source_doc": ""
+    },
+    {
+      "id": "p9_img1",
+      "path": "extracted_images\\Rimini_p9_img1.png",
+      "width": 250,
+      "height": 156,
+      "source_doc": ""
+    },
+    {
+      "id": "p10_img1",
+      "path": "extracted_images\\Rimini_p10_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p10_img2",
+      "path": "extracted_images\\Rimini_p10_img2.png",
+      "width": 250,
+      "height": 334,
+      "source_doc": ""
+    },
+    {
+      "id": "p10_img3",
+      "path": "extracted_images\\Rimini_p10_img3.png",
+      "width": 250,
+      "height": 188,
+      "source_doc": ""
+    },
+    {
+      "id": "p10_img4",
+      "path": "extracted_images\\Rimini_p10_img4.png",
+      "width": 60,
+      "height": 36,
+      "source_doc": ""
+    },
+    {
+      "id": "p10_img5",
+      "path": "extracted_images\\Rimini_p10_img5.png",
+      "width": 60,
+      "height": 17,
+      "source_doc": ""
+    },
+    {
+      "id": "p11_img1",
+      "path": "extracted_images\\Rimini_p11_img1.png",
+      "width": 250,
+      "height": 375,
+      "source_doc": ""
+    },
+    {
+      "id": "p11_img2",
+      "path": "extracted_images\\Rimini_p11_img2.png",
+      "width": 250,
+      "height": 212,
+      "source_doc": ""
+    },
+    {
+      "id": "p12_img1",
+      "path": "extracted_images\\Rimini_p12_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p12_img2",
+      "path": "extracted_images\\Rimini_p12_img2.png",
+      "width": 250,
+      "height": 167,
+      "source_doc": ""
+    },
+    {
+      "id": "p12_img3",
+      "path": "extracted_images\\Rimini_p12_img3.png",
+      "width": 250,
+      "height": 184,
+      "source_doc": ""
+    },
+    {
+      "id": "p13_img1",
+      "path": "extracted_images\\Rimini_p13_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p13_img2",
+      "path": "extracted_images\\Rimini_p13_img2.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p14_img1",
+      "path": "extracted_images\\Rimini_p14_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p15_img1",
+      "path": "extracted_images\\Rimini_p15_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p16_img1",
+      "path": "extracted_images\\Rimini_p16_img1.png",
+      "width": 600,
+      "height": 400,
+      "source_doc": ""
+    },
+    {
+      "id": "p17_img1",
+      "path": "extracted_images\\Rimini_p17_img1.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p18_img1",
+      "path": "extracted_images\\Rimini_p18_img1.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p20_img1",
+      "path": "extracted_images\\Rimini_p20_img1.png",
+      "width": 120,
+      "height": 90,
+      "source_doc": ""
+    },
+    {
+      "id": "p20_img2",
+      "path": "extracted_images\\Rimini_p20_img2.png",
+      "width": 120,
+      "height": 90,
+      "source_doc": ""
+    },
+    {
+      "id": "p20_img3",
+      "path": "extracted_images\\Rimini_p20_img3.png",
+      "width": 120,
+      "height": 65,
+      "source_doc": ""
+    },
+    {
+      "id": "p21_img1",
+      "path": "extracted_images\\Rimini_p21_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p21_img2",
+      "path": "extracted_images\\Rimini_p21_img2.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p22_img1",
+      "path": "extracted_images\\Rimini_p22_img1.png",
+      "width": 250,
+      "height": 164,
+      "source_doc": ""
+    },
+    {
+      "id": "p24_img1",
+      "path": "extracted_images\\Rimini_p24_img1.png",
+      "width": 250,
+      "height": 341,
+      "source_doc": ""
+    },
+    {
+      "id": "p24_img2",
+      "path": "extracted_images\\Rimini_p24_img2.png",
+      "width": 250,
+      "height": 167,
+      "source_doc": ""
+    },
+    {
+      "id": "p25_img1",
+      "path": "extracted_images\\Rimini_p25_img1.png",
+      "width": 250,
+      "height": 196,
+      "source_doc": ""
+    },
+    {
+      "id": "p25_img2",
+      "path": "extracted_images\\Rimini_p25_img2.png",
+      "width": 250,
+      "height": 246,
+      "source_doc": ""
+    },
+    {
+      "id": "p26_img1",
+      "path": "extracted_images\\Rimini_p26_img1.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p27_img1",
+      "path": "extracted_images\\Rimini_p27_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p27_img2",
+      "path": "extracted_images\\Rimini_p27_img2.png",
+      "width": 250,
+      "height": 165,
+      "source_doc": ""
+    },
+    {
+      "id": "p27_img3",
+      "path": "extracted_images\\Rimini_p27_img3.png",
+      "width": 250,
+      "height": 188,
+      "source_doc": ""
+    },
+    {
+      "id": "p29_img1",
+      "path": "extracted_images\\Rimini_p29_img1.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p31_img1",
+      "path": "extracted_images\\Rimini_p31_img1.png",
+      "width": 960,
+      "height": 137,
+      "source_doc": ""
+    },
+    {
+      "id": "p31_img2",
+      "path": "extracted_images\\Rimini_p31_img2.png",
+      "width": 250,
+      "height": 167,
+      "source_doc": ""
+    },
+    {
+      "id": "p31_img3",
+      "path": "extracted_images\\Rimini_p31_img3.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p31_img4",
+      "path": "extracted_images\\Rimini_p31_img4.png",
+      "width": 250,
+      "height": 184,
+      "source_doc": ""
+    },
+    {
+      "id": "p32_img1",
+      "path": "extracted_images\\Rimini_p32_img1.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p33_img1",
+      "path": "extracted_images\\Rimini_p33_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p33_img2",
+      "path": "extracted_images\\Rimini_p33_img2.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p33_img3",
+      "path": "extracted_images\\Rimini_p33_img3.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img1",
+      "path": "extracted_images\\Rimini_p34_img1.png",
+      "width": 250,
+      "height": 481,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img2",
+      "path": "extracted_images\\Rimini_p34_img2.png",
+      "width": 250,
+      "height": 187,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img3",
+      "path": "extracted_images\\Rimini_p34_img3.png",
+      "width": 250,
+      "height": 188,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img4",
+      "path": "extracted_images\\Rimini_p34_img4.png",
+      "width": 20,
+      "height": 14,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img5",
+      "path": "extracted_images\\Rimini_p34_img5.png",
+      "width": 20,
+      "height": 14,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img6",
+      "path": "extracted_images\\Rimini_p34_img6.png",
+      "width": 20,
+      "height": 14,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img7",
+      "path": "extracted_images\\Rimini_p34_img7.png",
+      "width": 20,
+      "height": 14,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img8",
+      "path": "extracted_images\\Rimini_p34_img8.png",
+      "width": 20,
+      "height": 14,
+      "source_doc": ""
+    },
+    {
+      "id": "p34_img9",
+      "path": "extracted_images\\Rimini_p34_img9.png",
+      "width": 20,
+      "height": 11,
+      "source_doc": ""
+    },
+    {
+      "id": "p41_img1",
+      "path": "extracted_images\\Rimini_p41_img1.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p42_img1",
+      "path": "extracted_images\\Rimini_p42_img1.png",
+      "width": 20,
+      "height": 24,
+      "source_doc": ""
+    },
+    {
+      "id": "p42_img2",
+      "path": "extracted_images\\Rimini_p42_img2.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p42_img3",
+      "path": "extracted_images\\Rimini_p42_img3.png",
+      "width": 20,
+      "height": 11,
+      "source_doc": ""
+    },
+    {
+      "id": "p42_img4",
+      "path": "extracted_images\\Rimini_p42_img4.png",
+      "width": 20,
+      "height": 27,
+      "source_doc": ""
+    },
+    {
+      "id": "p42_img5",
+      "path": "extracted_images\\Rimini_p42_img5.png",
+      "width": 20,
+      "height": 20,
+      "source_doc": ""
+    },
+    {
+      "id": "p43_img1",
+      "path": "extracted_images\\Rimini_p43_img1.png",
+      "width": 20,
+      "height": 31,
+      "source_doc": ""
+    },
+    {
+      "id": "p43_img2",
+      "path": "extracted_images\\Rimini_p43_img2.png",
+      "width": 1,
+      "height": 1,
+      "source_doc": ""
+    }
+  ],
+  "tables": [
+    {
+      "id": "p36_t1",
+      "rows": 6,
+      "cols": 1,
+      "source_doc": ""
+    },
+    {
+      "id": "p39_t1",
+      "rows": 1,
+      "cols": 2,
+      "source_doc": ""
+    },
+    {
+      "id": "p39_t2",
+      "rows": 2,
+      "cols": 1,
+      "source_doc": ""
+    }
+  ]
+}

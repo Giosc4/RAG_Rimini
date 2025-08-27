@@ -1,0 +1,20 @@
+{
+  "creation_date": "2025-08-27T17:32:47.893077",
+  "total_documents": 1,
+  "total_words": 17830,
+  "total_chars": 120704,
+  "total_images": 77,
+  "total_tables": 3,
+  "documents": [
+    {
+      "title": "Rimini - Wikipedia",
+      "source": "..\\documents\\Rimini.pdf",
+      "type": "pdf",
+      "words": 17830,
+      "chars": 120704,
+      "images": 77,
+      "tables": 3,
+      "sections_count": 43
+    }
+  ]
+}

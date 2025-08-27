@@ -113,7 +113,7 @@ class RAGSystem:
     def __init__(self,
                  vector_store: VectorStoreManager,
                  llm_client: Optional[OllamaClient] = None,
-                 retrieval_k: int = 5,
+                 retrieval_k: int = 10,  # Aumentato per recuperare più contesto
                  rerank_k: int = 3):
         
         self.vector_store = vector_store
@@ -128,9 +128,9 @@ REGOLE IMPORTANTI:
 1. Usa SOLO le informazioni presenti nel contesto
 2. Se l'informazione non è nel contesto, rispondi "Non ho trovato questa informazione nei documenti forniti"
 3. Cita sempre da quale parte del contesto proviene l'informazione
-4. Sii preciso e conciso
-5. Rispondi in italiano"""
-        
+4. Rispondi SEMPRE nella stessa lingua della domanda. Se la domanda è in italiano, rispondi in italiano. Se la domanda è in inglese, rispondi in inglese.
+5. Sii preciso e conciso"""
+
         self.answer_template = """Contesto disponibile:
 {context}
 
@@ -160,7 +160,7 @@ Risposta:"""
         results = self.vector_store.search_with_score(
             query=query,
             n_results=k,
-            score_threshold=0.2  # Soglia minima di similarità
+            score_threshold=0.1  # Soglia minima di similarità abbassata per recuperare più risultati
         )
         
         logger.info(f"📚 Recuperati {len(results)} chunk rilevanti")

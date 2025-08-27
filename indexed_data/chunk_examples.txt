@@ -1,114 +1,80 @@
 ESEMPI DI CHUNK CREATI
 ================================================================================
 
+CHUNK TESTUALI:
+----------------------------------------
 Chunk #0
 File: Rimini.pdf
-Token: 1 | Caratteri: 6
-----------------------------------------
+Token: 331 | Caratteri: 922
+Rimini
 comune
-
-================================================================================
+Localizzazione
+Stato
+Italia
+Regione
+Emilia-Romagna
+Provincia
+Rimini
+Amministrazione
+Sindaco
+Jamil Sadegholvaad (PD)
+dal 7-10-2021
+Territorio
+Coordinate
+44°03′34′′N 12°34′06′′E
+Altitudine
+5 m s.l.m. Superficie
+135,71 km2
+Abitanti
+150 895[1] (31-5-2025)
+Densità
+1 111,89 ab./km2
+Frazioni
+...
 
 Chunk #1
 File: Rimini.pdf
-Token: 6 | Caratteri: 13
-----------------------------------------
-dal 7-10-2021
-
-================================================================================
+Token: 309 | Caratteri: 976
+C., per tutto il
+periodo della loro dominazione è stata nodo di
+comunicazione fra il nord e il sud della penisola e sul suo
+suolo gli imperatori romani eressero monumenti dei quali
+restano tracce importanti.[9] È stata feudo dei Malatesta, e
+la corte di Sigismondo Pandolfo Malatesta fu una delle
+più...
 
 Chunk #2
 File: Rimini.pdf
-Token: 12 | Caratteri: 21
-----------------------------------------
-Altitudine 5 m s.l.m.
+Token: 270 | Caratteri: 738
+Geografia fisica
+Territorio
+
+Comuni
+confinanti
+Bellaria-Igea Marina,
+Coriano, Riccione, San
+Mauro Pascoli (FC),
+Santarcangelo di
+Romagna, Serravalle
+(RSM), Verucchio
+Altre informazioni
+Cod.
+postale
+47921–47924
+Prefisso
+
+Fuso
+orario
+UTC+1
+Codice
+ISTAT
+
+Cod.
+catastale
+H294
+Targa
+RN
+Cl. sismica
+zona 2 ...
 
 ================================================================================
-
-Chunk #3
-File: Rimini.pdf
-Token: 12 | Caratteri: 24
-----------------------------------------
-Densità 1 111,89 ab./km2
-
-================================================================================
-
-Chunk #4
-File: Rimini.pdf
-Token: 29 | Caratteri: 79
-----------------------------------------
-Disambiguazione – Se stai cercando altri significati, vedi Rimini (disambigua).
-
-================================================================================
-
-Chunk #188
-File: Rimini.pdf
-Token: 282 | Caratteri: 771
-----------------------------------------
-
-Nevio Matteini, Rimini. I suoi dintorni. La riviera di Romagna, Rimini, Cappelli, 1966.
-Pier Giorgio Pasini, Itinerari malatestiani a Rimini e nel riminese, Rimini, Provincia di Rimini,
-2013, ISBN 978-88-8049-868-1.
-Pier Giorgio Pasini, Musei nella provincia di Rimini, Rimini, Provincia di Rimini, 2006,
-SBN RAV1624996.
-Pier Giorgio Pasini, Presenze d'arte negli edifici sacri di Rimini e del Riminese, Rimini,
-Provincia di Rimini, 2003, SBN RAV1100905.
-Luigi Tonini, Guida del forestiere nella cit...
-
-================================================================================
-
-Chunk #189
-File: Rimini.pdf
-Token: 20 | Caratteri: 53
-----------------------------------------
-Wikizionario contiene il lemma di dizionario «Rimini»
-
-================================================================================
-
-Chunk #190
-File: Rimini.pdf
-Token: 306 | Caratteri: 866
-----------------------------------------
-Wikimedia Commons (https://commons.wikimedia.org/wiki/?uselang=it) contiene
-immagini o altri file su Rimini (https://commons.wikimedia.org/wiki/Category: Rimini?us
-elang=it)
-Wikivoyage contiene informazioni turistiche su Rimini
-Sito ufficiale, su comune.rimini.it.
-Rimini, su Treccani.it – Enciclopedie on line, Istituto dell'Enciclopedia Italiana.
-Mario Longhena, Aldo Foratti, Goffredo Bendinelli, Augusto Campana, Alberto Moravia e
-Mario Menghini, RIMINI, in Enciclopedia Italiana, Istituto dell'E...
-
-================================================================================
-
-Chunk #191
-File: Rimini.pdf
-Token: 224 | Caratteri: 636
-----------------------------------------
-
-G. A. Mansuelli e M. Zuffa, RIMINI, in Enciclopedia dell'Arte Antica, Istituto dell'Enciclopedia
-Italiana, 1965.
-N. Bernacchio, RIMINI, in Enciclopedia dell'Arte Medievale, Istituto dell'Enciclopedia
-Italiana, 1991-2000.
-Anna Falcioni, Rimini, in Enciclopedia machiavelliana, Istituto dell'Enciclopedia Italiana,
-2014.
-(EN) Rimini, su Enciclopedia Britannica, Encyclopædia Britannica, Inc.
-Augusto Vasina, Rimini, in Enciclopedia dantesca, Istituto dell'Enciclopedia Italiana, 1970.
-Informazioni Tur...
-
-================================================================================
-
-Chunk #0
-File: Rimini.pdf
-Token: 436 | Caratteri: 867
-----------------------------------------
-autorità
-VIAF (EN) 136027800 (https://viaf.org/viaf/136027800) · ISNI (EN) 0000 0001 0723
-3104 (http://isni.org/isni/0000000107233104) · SBN RAVV018467 (https://opac.sb
-n.it/risultati-autori/-/opac-autori/detail/RAVV018467) · SBN RMLL002905 (https://op
-ac.sbn.it/luogo/RMLL002905) · BAV 497/15058 (https://opac.vatlib.it/auth/detail/497
-_15058) · LCCN (EN) n79039956 (http://id.loc.gov/authorities/names/n79039956) ·
-GND (DE) 4050057-3 (https://d-nb.info/gnd/4050057-3) · BNF (FR) cb119573054 (ht
-tps...
-
-================================================================================
-

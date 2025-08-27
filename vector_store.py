@@ -32,11 +32,13 @@ class VectorStoreManager:
     def __init__(self, 
                  embedding_model: str = "sentence-transformers/paraphrase-mpnet-base-v2",
                  persist_directory: str = "./chroma_db",
-                 collection_name: str = "rimini_docs"):
+                 collection_name: str = "rimini_docs",
+                 source_dir: Optional[str] = None):
         
         self.embedding_model_name = embedding_model
         self.persist_directory = Path(persist_directory)
         self.collection_name = collection_name
+        self.source_dir = source_dir and Path(source_dir)
         
         # Crea directory se non esiste
         self.persist_directory.mkdir(parents=True, exist_ok=True)
@@ -58,6 +60,10 @@ class VectorStoreManager:
         
         # Crea o carica collection
         self._setup_collection()
+        
+        # Carica dati dalla directory sorgente se specificata
+        if self.source_dir and self.source_dir.exists() and self.collection.count() == 0:
+            self._load_from_source_dir()
     
     def _setup_collection(self):
         """Configura la collection in ChromaDB"""
@@ -308,6 +314,149 @@ class VectorStoreManager:
         
         logger.info(f"Vector store esportato in: {output_path}")
         return output_path
+    
+    def _load_from_source(self):
+        """Carica dati dal file sorgente preprocessato"""
+        if not self.source_file or not self.source_file.exists():
+            return
+            
+        logger.info(f"Caricamento dati da: {self.source_file}")
+        
+        documents = []
+        current_doc = None
+        current_content = []
+        
+        with open(self.source_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("DOCUMENTO"):
+                    # Save previous document if exists
+                    if current_doc and current_content:
+                        documents.append({
+                            'text': '\n'.join(current_content),
+                            'metadata': current_doc
+                        })
+                        current_content = []
+                    
+                    # Start new document
+                    doc_name = line.split(": ", 1)[1] if ": " in line else line
+                    current_doc = {
+                        'source': str(self.source_file),
+                        'name': doc_name,
+                        'type': 'preprocessed'
+                    }
+                elif current_doc and line and not line.startswith("="):
+                    current_content.append(line)
+        
+        # Add last document
+        if current_doc and current_content:
+            documents.append({
+                'text': '\n'.join(current_content),
+                'metadata': current_doc
+            })
+        
+        # Generate embeddings and add to collection
+        if documents:
+            texts = [doc['text'] for doc in documents]
+            embeddings = self.generate_embeddings(texts)
+            
+            # Add to ChromaDB
+            self.collection.add(
+                embeddings=embeddings.tolist(),
+                documents=texts,
+                metadatas=[doc['metadata'] for doc in documents],
+                ids=[f"doc_{i}" for i in range(len(documents))]
+            )
+            
+            logger.info(f"Indicizzati {len(documents)} documenti dal file sorgente")
+    
+    def _load_from_source_dir(self):
+        """Carica dati da tutti i file nella directory sorgente"""
+        if not self.source_dir or not self.source_dir.exists():
+            return
+            
+        logger.info(f"Caricamento dati da directory: {self.source_dir}")
+        
+        documents = []
+        
+        # Cerca tutti i file .txt e .json nella directory
+        source_files = list(self.source_dir.glob("*.txt")) + list(self.source_dir.glob("*.json"))
+        
+        for source_file in source_files:
+            logger.info(f"Processando file: {source_file}")
+            
+            if source_file.suffix == '.json':
+                # Carica documento JSON
+                try:
+                    with open(source_file, 'r', encoding='utf-8') as f:
+                        json_data = json.load(f)
+                        # Assumiamo che il JSON abbia una struttura simile al file di testo
+                        if isinstance(json_data, dict) and 'documents' in json_data:
+                            for doc in json_data['documents']:
+                                documents.append({
+                                    'text': doc.get('content', ''),
+                                    'metadata': {
+                                        'source': str(source_file),
+                                        'name': doc.get('name', 'Documento senza nome'),
+                                        'type': 'json'
+                                    }
+                                })
+                except Exception as e:
+                    logger.error(f"Errore nel caricamento del JSON {source_file}: {e}")
+                    continue
+                    
+            else:  # File di testo
+                current_doc = None
+                current_content = []
+                
+                try:
+                    with open(source_file, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            line = line.strip()
+                            if line.startswith("DOCUMENTO"):
+                                # Save previous document if exists
+                                if current_doc and current_content:
+                                    documents.append({
+                                        'text': '\n'.join(current_content),
+                                        'metadata': current_doc
+                                    })
+                                    current_content = []
+                                
+                                # Start new document
+                                doc_name = line.split(": ", 1)[1] if ": " in line else line
+                                current_doc = {
+                                    'source': str(source_file),
+                                    'name': doc_name,
+                                    'type': 'text'
+                                }
+                            elif current_doc and line and not line.startswith("="):
+                                current_content.append(line)
+                        
+                        # Add last document from file
+                        if current_doc and current_content:
+                            documents.append({
+                                'text': '\n'.join(current_content),
+                                'metadata': current_doc
+                            })
+                except Exception as e:
+                    logger.error(f"Errore nel caricamento del file {source_file}: {e}")
+                    continue
+        
+        # Generate embeddings and add to collection
+        if documents:
+            texts = [doc['text'] for doc in documents]
+            embeddings = self.generate_embeddings(texts)
+            
+            # Add to ChromaDB
+            self.collection.add(
+                embeddings=embeddings.tolist(),
+                documents=texts,
+                metadatas=[doc['metadata'] for doc in documents],
+                ids=[f"doc_{i}" for i in range(len(documents))]
+            )
+            
+            logger.info(f"Indicizzati {len(documents)} documenti dalla directory sorgente")
+        
 
 
 class ChunkIndexer:

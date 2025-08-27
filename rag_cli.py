@@ -18,12 +18,27 @@ TEST_QUESTIONS = [
 ]
 
 def main():
+    # Directory con i documenti preprocessati
+    processed_dir = "./PreProcessing_scripts/processed"
+    
     # Inizializza Vector Store
     vector_store = VectorStoreManager(
         embedding_model="sentence-transformers/paraphrase-mpnet-base-v2",
         persist_directory="./chroma_db",
-        collection_name="rimini_knowledge_base",
+        collection_name="rimini_knowledge_base"
     )
+    
+    # Resetta la collection prima di caricare i nuovi dati
+    vector_store.reset_collection()
+    
+    # Ricarica con i nuovi dati dalla directory
+    vector_store = VectorStoreManager(
+        embedding_model="sentence-transformers/paraphrase-mpnet-base-v2",
+        persist_directory="./chroma_db",
+        collection_name="rimini_knowledge_base",
+        source_dir=processed_dir
+    )
+    
     stats = vector_store.get_statistics()
     if stats['total_documents'] == 0:
         logger.error("Nessun documento indicizzato. Esegui prima l'indicizzazione dei documenti.")
